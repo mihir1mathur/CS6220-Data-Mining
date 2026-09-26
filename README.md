@@ -23,7 +23,7 @@ Topics covered:
 - Hyperparameter experiments
 - Confusion matrix evaluation
 
-See the `Homework-1` directory for the notebook, datasets, dependencies, and detailed README.
+Please see the `Homework-1` directory for the notebook, datasets, dependencies, and detailed README.
 
 ## Repository Structure
 
