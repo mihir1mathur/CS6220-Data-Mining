@@ -54,7 +54,8 @@ CS6220-Data-Mining/
 │   └── iris.names
 ├── Homework-2/
 │   ├── README.md
-│   └── homework_2.ipynb
+│   ├── homework_2.ipynb
+│   └── requirements.txt
 ├── .gitignore
 └── README.md
 ```
