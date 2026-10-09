@@ -17,3 +17,4 @@ This homework implements and evaluates linear regression and regression trees us
 
 ## Files
 - `homework_2.ipynb` — Complete Jupyter Notebook with code, results, and visualizations.
+- `requirements.txt` — Python dependencies required to run the notebook.
