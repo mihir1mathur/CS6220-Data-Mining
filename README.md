@@ -1,10 +1,12 @@
+
 # CS6220 Data Mining
 
-This repository contains my homework assignments for **CS6220 — Data Mining Techniques** at Northeastern University.
+This repository contains my homework assignments for **CS6220 — Data Mining Techniques** at **Northeastern University**.
 
 ## Course
 
 **Course:** CS6220 — Data Mining Techniques  
+**University:** Northeastern University  
 **Student:** Mihir Mathur
 
 ## Homework Assignments
@@ -66,6 +68,58 @@ Implemented and analyzed machine learning models and neural network training met
 
 [View Homework 3](Homework-3/)
 
+### Homework 4 — Association Rule Mining and Hierarchical Clustering
+
+Implemented frequent itemset mining, association rule generation, and hierarchical agglomerative clustering algorithms.
+
+**Topics covered:**
+- Apriori frequent itemset mining
+- Support calculation and frequent itemset discovery
+- Candidate generation using JOIN
+- Subset-based candidate pruning
+- Support counting and pruning effectiveness
+- Association rule generation using Apriori_rules
+- Confidence-based rule pruning
+- Support, confidence, and lift analysis
+- Hierarchical agglomerative clustering (HAC)
+- Single linkage (`min_dist`)
+- Complete linkage (`max_dist`)
+- Efficient incremental distance-matrix updates
+- Dendrogram construction
+- Cluster membership extraction and visualization
+- Comparison of clustering outcomes
+
+**Apriori and Association Rule Mining:**
+- Transaction dataset: 20 transactions
+- Minimum support: 0.25
+- Minimum confidence: 0.60
+- Frequent itemsets discovered: 10
+- Qualifying association rules: 11
+- Candidate pruning reduction at k = 3: 66.67%
+
+**Hierarchical Clustering:**
+- Dataset: `clustering.txt`
+- Data points: 370
+- Dimensions: 2
+- Target clusters: 13
+- Linkage methods: Single and Complete
+- Full dendrogram: 369 merges
+
+Single linkage better preserves elongated and curved structures, while complete linkage favors compact clusters.
+
+**Main notebook:** [Homework 4 Jupyter Notebook](Homework-4/homework_4.ipynb)
+
+**Dataset:** [clustering.txt](Homework-4/clustering.txt)
+
+**Visualizations:**
+- [Original Dataset Scatter Plot](Homework-4/Q9_dataset_scatter.png)
+- [Single-Linkage Dendrogram](Homework-4/Q10_single_linkage_dendrogram.png)
+- [Single-Linkage 13 Clusters](Homework-4/Q10_single_linkage_13_clusters.png)
+- [Complete-Linkage Dendrogram](Homework-4/Ans11_complete_linkage_dendrogram.png)
+- [Complete-Linkage 13 Clusters](Homework-4/Ans11_complete_linkage_13_clusters.png)
+
+[View Homework 4](Homework-4/)
+
 ## Repository Structure
 
 ```text
@@ -90,6 +144,17 @@ CS6220-Data-Mining/
 │   ├── Q9_ReLU_Training.gif
 │   └── requirements.txt
 │
+├── Homework-4/
+│   ├── README.md
+│   ├── homework_4.ipynb
+│   ├── clustering.txt
+│   ├── Q9_dataset_scatter.png
+│   ├── Q10_single_linkage_dendrogram.png
+│   ├── Q10_single_linkage_13_clusters.png
+│   ├── Ans11_complete_linkage_dendrogram.png
+│   ├── Ans11_complete_linkage_13_clusters.png
+│   └── requirements.txt
+│
 ├── .gitignore
 └── README.md
 ```
@@ -98,37 +163,60 @@ CS6220-Data-Mining/
 
 Each homework directory contains its own README with assignment-specific information and execution instructions.
 
-To run a homework notebook:
+### 1. Clone the repository
 
-1. Clone this repository:
+```bash
+git clone https://github.com/mihir1mathur/CS6220-Data-Mining.git
+```
 
-   ```bash
-   git clone https://github.com/mihir1mathur/CS6220-Data-Mining.git
-   ```
+### 2. Navigate to the relevant homework directory
 
-2. Navigate to the relevant homework directory, for example:
+For example, for Homework 4:
 
-   ```bash
-   cd CS6220-Data-Mining/Homework-3
-   ```
+```bash
+cd CS6220-Data-Mining/Homework-4
+```
 
-3. Install the required dependencies:
+### 3. Install dependencies
 
-   ```bash
-   python -m pip install -r requirements.txt
-   ```
+```bash
+python -m pip install -r requirements.txt
+```
 
-4. Launch Jupyter Notebook:
+### 4. Launch Jupyter Notebook
 
-   ```bash
-   jupyter notebook
-   ```
+```bash
+jupyter notebook
+```
 
-5. Open the relevant notebook and execute its cells in order.
+### 5. Execute the notebook
+
+Open the relevant `.ipynb` file and run all cells sequentially.
+
+For Homework 4, ensure `clustering.txt` is in the same directory as `homework_4.ipynb`.
+
+## Technologies
+
+- Python
+- NumPy
+- Matplotlib
+- SciPy
+- Jupyter Notebook
 
 ## Notes
 
 - Homework assignments are organized into separate directories.
-- Each homework directory contains its own documentation and dependencies.
+- Each homework directory contains assignment-specific documentation.
+- Python dependencies are specified in the corresponding `requirements.txt` files.
 - Saved plots and visualizations are included where applicable.
-- Interactive animations may require running the notebook locally; Homework 3 also provides a GIF for GitHub viewing.
+- Homework 3 includes a ReLU training animation.
+- Homework 4 includes Apriori mining results, association rule analysis, HAC dendrograms, and color-coded clustering visualizations.
+
+## Key Learning Areas
+
+- Classification and regression
+- Model evaluation and hyperparameter analysis
+- Neural networks and gradient-based learning
+- Frequent itemset mining and association rules
+- Hierarchical clustering and linkage methods
+- Algorithm implementation and visualization
